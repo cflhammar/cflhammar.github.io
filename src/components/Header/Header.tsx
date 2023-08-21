@@ -20,22 +20,31 @@ const Header : FC<PageIdInterface> = ({pageId, setPageId}) => {
                 <h1>Sofia & Fredrik</h1>
             </Link>
             <div className="navBar">
-                <Link to="/" style={ pageId != 0 ? {  textDecoration: "none" } : {}}>
-                    <Button onClick={() => onClick(0)} variant="text">Start</Button>
-                </Link>
-                <Link to="/program" style={ pageId != 1 ? {  textDecoration: "none" } : {}}>
-                    <Button onClick={() => onClick(1)} variant="text">Program</Button>
-                </Link>
-                <Link to="/boende" style={ pageId != 2 ? {  textDecoration: "none" } : {}}>
-                    <Button onClick={() => onClick(2)} variant="text">Boende</Button>
-                </Link>
-                <Link to="/ovrig-info" style={ pageId != 3 ? {  textDecoration: "none" } : {}}>
-                    <Button onClick={() => onClick(3)} variant="text">Övrig information</Button>
-                </Link>
-                <Link to="/filipstad" style={ pageId != 4 ? {  textDecoration: "none" } : {}}>
-                    <Button onClick={() => onClick(4)} variant="text">Filipstad</Button>
-                </Link>
-
+                <div className={ pageId == 0 ? "selected" : "unselected"}>
+                    <Link to="/" >
+                        <Button onClick={() => onClick(0)} variant="text">Start</Button>
+                    </Link>
+                </div>
+                <div className={ pageId == 1 ? "selected" : "unselected"}>
+                    <Link to="/program" >
+                        <Button onClick={() => onClick(1)} variant="text">Program</Button>
+                    </Link>
+                </div>
+                <div className={ pageId == 2 ? "selected" : "unselected"}>
+                    <Link to="/boende" >
+                        <Button onClick={() => onClick(2)} variant="text">Boende</Button>
+                    </Link>
+                </div>
+                <div className={ pageId == 3 ? "selected" : "unselected"}>
+                    <Link to="/ovrig-info" >
+                        <Button onClick={() => onClick(3)} variant="text">Övrig info</Button>
+                    </Link>
+                </div>
+                <div className={ pageId == 4 ? "selected" : "unselected"}>
+                    <Link to="/filipstad" >
+                        <Button onClick={() => onClick(4)} variant="text">Filipstad</Button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

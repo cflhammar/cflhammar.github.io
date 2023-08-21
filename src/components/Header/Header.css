@@ -8,12 +8,21 @@
 }
 
 .navBar {
-    background-color: rgb(222, 203, 187);
     margin-left: 10px;
+    display: inline-flex;
 }
 
 button {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.selected {
+    background-color: rgb(222, 203, 187);
+    text-decoration: none;
+}
+
+.unselected {
+    text-decoration: none;
 }

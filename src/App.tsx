@@ -14,10 +14,9 @@ import {Button} from "@material-ui/core";
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
-    const [isVerified, setIsVerified] = useState(false);
+    const [isVerified, setIsVerified] = useState(true);
 
     const handleChange = (event: { target: { value: React.SetStateAction<string> | null; }; }) => {
-        // 👇 Get input value from "event"
         if (event.target.value != null)  setPassword(event.target.value);
     };
 
@@ -32,7 +31,7 @@ function App() {
                     <Header pageId={pageId} setPageId={setPageId}/>
                     <div className="text-container">
                         <Routes>
-                            <Route path="/" element={<StartPage/>}/>
+                            <Route path="/" element={<StartPage setPageId={setPageId}/>}/>
                             <Route path="/program" element={<Program/>}/>
                             <Route path="/boende" element={<Boende/>}/>
                             <Route path="/ovrig-info" element={<Info/>}/>

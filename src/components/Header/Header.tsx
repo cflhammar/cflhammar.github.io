@@ -32,7 +32,7 @@ const Header : FC<PageIdInterface> = ({pageId, setPageId}) => {
                 </div>
                 <div className={ pageId == 2 ? "selected" : "unselected"}>
                     <Link to="/boende" >
-                        <Button onClick={() => onClick(2)} variant="text">Boende</Button>
+                        <Button onClick={() => onClick(2)} variant="text">OSA & Boende</Button>
                     </Link>
                 </div>
                 <div className={ pageId == 3 ? "selected" : "unselected"}>

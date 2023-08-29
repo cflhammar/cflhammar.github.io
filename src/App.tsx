@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./components/Header/Header";
-import StartPage from "./components/StartPage";
-import Program from "./components/Program";
-import Boende from "./components/Boende";
+import StartPage from "./components/Start/StartPage";
+import Program from "./components/Program/Program";
+import Boende from "./components/Bo/Boende";
 import Info from "./components/Info";
 import Filipstad from "./components/Filipstad";
 import Footer from "./components/Footer/Footer";
@@ -14,14 +14,14 @@ import {Button} from "@material-ui/core";
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
-    const [isVerified, setIsVerified] = useState(true);
+    const [isVerified, setIsVerified] = useState(false);
 
     const handleChange = (event: { target: { value: React.SetStateAction<string> | null; }; }) => {
         if (event.target.value != null)  setPassword(event.target.value);
     };
 
     const validate = () => {
-        if (password === "pw") setIsVerified(true)
+        if (password === "SF2024") setIsVerified(true)
     }
 
     if (isVerified) {

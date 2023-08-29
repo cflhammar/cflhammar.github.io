@@ -1,11 +1,13 @@
 import React from "react";
 import {Box, Container} from "@mui/material";
+import hh from "./hh.jpg";
 
 const StartPage = () => {
     return (
         <Container>
             <Box>
                 <div className="start">
+                    <img src={hh} alt="hennickehammars herrgård" style={{width:"75%"}}/>
                     <h1>Hennickehammars Herrgård</h1>
                     <p> Bröllopet äger rum på Hennicke Hammars Herrgård utanför Filipstad.</p>
 

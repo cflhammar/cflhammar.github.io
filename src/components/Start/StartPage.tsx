@@ -1,17 +1,46 @@
-import React, {FC} from "react";
+import React, {FC, useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {Box, Container} from "@mui/material";
-import Footer from "./Footer/Footer";
+
+import sof1 from "./sof1.jpg";
+import sof2 from "./sof2.jpg";
+import sof3 from "./sof3.jpg";
+import sof4 from "./sof4.jpg";
+import sof5 from "./sof5.jpg";
+import sof6 from "./sof6.jpg";
+import sof7 from "./sof7.jpg";
+import sof8 from "./sof8.jpg";
+
+
 
 interface PageId {
     setPageId: (pageId: number) => void
 }
 
 const StartPage: FC<PageId> = ({setPageId}) => {
+const [image, setImage] = useState(sof1);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setImage(getRandomImage())
+        }, 1000)
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [image]);
+
+
+    const images = [sof1, sof2, sof3, sof4, sof5, sof6, sof7, sof8 ]
+    const getRandomImage = () : string => {
+        let r = Math.floor(Math.random() * 7) + 1;
+        return images[r];
+    }
+
     return (
         <Container>
             <Box>
-                <Footer pageId={0} />
+                <img src={getRandomImage()} style={{width: "50%", height: "auto", maxHeight: "400px" }}/>
                 <h1> Vi ska gifta oss! </h1>
                 <h2>Varmt välkommen på vårt bröllop!</h2>
 

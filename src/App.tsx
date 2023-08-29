@@ -38,7 +38,7 @@ function App() {
                             <Route path="/filipstad" element={<Filipstad/>}/>
                         </Routes>
                     </div>
-                    <Footer pageId={pageId}/>
+                    {/*<Footer pageId={pageId}/>*/}
                 </Router>
             </div>
         )}

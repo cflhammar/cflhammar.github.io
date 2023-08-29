@@ -2,6 +2,7 @@ import React, {FC, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { Button } from "@material-ui/core";
+import {Container} from "@mui/material";
 
 interface PageIdInterface {
     pageId: number
@@ -17,7 +18,12 @@ const Header : FC<PageIdInterface> = ({pageId, setPageId}) => {
     return (
         <div className="header">
             <Link to="/" style={{ textDecoration: "none" }}>
-                <h1>Sofia & Fredrik</h1>
+                <Container>
+                    <div className="headertext">
+                    <h1>Sofia & Fredrik</h1>
+                    <p>1 juni 2024</p>
+                </div>
+                </Container>
             </Link>
             <div className="navBar">
                 <div className={ pageId == 0 ? "selected" : "unselected"}>

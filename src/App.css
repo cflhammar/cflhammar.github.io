@@ -4,12 +4,13 @@
 
 .text-container {
   width: 75%;
-  height: 500px;
+  height: auto;
   margin: auto;
 
   border-color: white;
   border-style: solid;
   border-width: 2px;
+
 }
 
 .login {

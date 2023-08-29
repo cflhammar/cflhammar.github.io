@@ -40,7 +40,7 @@ const [image, setImage] = useState(sof1);
     return (
         <Container>
             <Box>
-                <img src={getRandomImage()} style={{width: "50%", height: "auto", maxHeight: "400px" }}/>
+                <img src={getRandomImage()} style={{width: "40%", height: "auto", maxHeight: "350px" }}/>
                 <h1> Vi ska gifta oss! </h1>
                 <h2>Varmt välkommen på vårt bröllop!</h2>
 

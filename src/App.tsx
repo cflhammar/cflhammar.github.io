@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./components/Header/Header";
@@ -8,13 +7,12 @@ import Program from "./components/Program/Program";
 import Boende from "./components/Bo/Boende";
 import Info from "./components/Info";
 import Filipstad from "./components/Filipstad";
-import Footer from "./components/Footer/Footer";
 import {Button} from "@material-ui/core";
 
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
-    const [isVerified, setIsVerified] = useState(false);
+    const [isVerified, setIsVerified] = useState(true);
 
     const handleChange = (event: { target: { value: React.SetStateAction<string> | null; }; }) => {
         if (event.target.value != null)  setPassword(event.target.value);
@@ -38,7 +36,6 @@ function App() {
                             <Route path="/filipstad" element={<Filipstad/>}/>
                         </Routes>
                     </div>
-                    {/*<Footer pageId={pageId}/>*/}
                 </Router>
             </div>
         )}

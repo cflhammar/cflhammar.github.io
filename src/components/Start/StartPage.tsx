@@ -8,6 +8,7 @@ import sof3 from "./sof3.jpeg";
 import sof4 from "./sof4.jpeg";
 import sof5 from "./sof5.jpeg";
 import SofImage from "../SofImage/SofImage";
+import CountDown from "../CountDown";
 
 interface PageId {
     setPageId: (pageId: number) => void
@@ -18,8 +19,9 @@ const StartPage: FC<PageId> = ({setPageId}) => {
     return (
         <Container>
             <Box>
-                <h1> Vi ska gifta oss! </h1>
-                <h2>Varmt välkommen på vårt bröllop!</h2>
+                <h1> Vi gifter oss om: </h1>
+                <CountDown />
+                <h1>Varmt välkommen på vårt bröllop!</h1>
 
                 <p> Vi är otroligt glada att dela med oss av den största dag i våra liv! Med glädje och
                     förväntan bjuder vi in dig för att fira vår kärlek när vi gifter oss på

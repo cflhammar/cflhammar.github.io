@@ -25,6 +25,11 @@
 .headertext{
     margin: auto;
     margin-left: 0;
+
+}
+
+.headertext h1 {
+    font-family: "Playfair Display";
 }
 
 .headertext2 {
@@ -32,6 +37,7 @@ text-align: left;
     margin-top: 10px;
 
 }
+
 
 .headertext p {
     margin-top: 0;

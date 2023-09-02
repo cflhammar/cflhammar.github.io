@@ -8,6 +8,8 @@ import Boende from "./components/Bo/Boende";
 import Info from "./components/Info";
 import Filipstad from "./components/Filipstad";
 import {Button} from "@material-ui/core";
+import background from "./bg.jpg";
+
 
 function App() {
     const [pageId, setPageId] = useState(0);
@@ -24,7 +26,7 @@ function App() {
 
     if (isVerified) {
         return (
-            <div className="App">
+            <div className="App" >
                 <Router>
                     <Header pageId={pageId} setPageId={setPageId}/>
                     <div className="text-container">

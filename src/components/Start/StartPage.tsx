@@ -2,45 +2,43 @@ import React, {FC, useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {Box, Container} from "@mui/material";
 
-import sof1 from "./sof1.jpg";
-import sof2 from "./sof2.jpg";
-import sof3 from "./sof3.jpg";
-import sof4 from "./sof4.jpg";
-import sof5 from "./sof5.jpg";
-import sof6 from "./sof6.jpg";
-import sof7 from "./sof7.jpg";
-import sof8 from "./sof8.jpg";
-
-
+import sof1 from "./sof1.jpeg";
+import sof2 from "./sof2.jpeg";
+import sof3 from "./sof3.jpeg";
+import sof4 from "./sof4.jpeg";
+import sof5 from "./sof5.jpeg";
 
 interface PageId {
     setPageId: (pageId: number) => void
 }
 
 const StartPage: FC<PageId> = ({setPageId}) => {
-const [image, setImage] = useState(sof1);
+const [imageNumber, setImageNumber] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setImage(getRandomImage())
+            let next = (imageNumber + 1 ) % images.length;
+            setImageNumber(next);
         }, 1000)
 
         return () => {
             clearInterval(interval);
         };
-    }, [image]);
+    }, [imageNumber]);
 
 
-    const images = [sof1, sof2, sof3, sof4, sof5, sof6, sof7, sof8 ]
-    const getRandomImage = () : string => {
-        let r = Math.floor(Math.random() * 7) + 1;
-        return images[r];
+    const images = [sof1, sof2, sof3, sof4, sof5];
+    const getNextImage = () : string => {
+      //  let r = Math.floor(Math.random() * images.length - 1) + 1 ;
+        console.log(imageNumber);
+        return images[imageNumber];
     }
+
 
     return (
         <Container>
             <Box>
-                <img src={getRandomImage()} style={{width: "40%", height: "auto", maxHeight: "350px" }}/>
+                <img src={getNextImage()} style={{width: "40%", height: "100%" }}/>
                 <h1> Vi ska gifta oss! </h1>
                 <h2>Varmt välkommen på vårt bröllop!</h2>
 

@@ -19,19 +19,24 @@ const Program = () => {
     const style = {
         margin: 0,
         padding: "3px",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        fontFamily: "Amatic SC",
+        fontSize: "x-large"
     }
 
     const timestyle = {
         margin: 0,
         padding: "3px",
+        fontWeight: "bold",
+        fontFamily: "Amatic SC",
+        fontSize: "x-large"
     }
 
     return (
         <Box sx={{width: "100%"}}>
             <Tabs value={value} onChange={handleChange} centered>
-                <Tab label="lördag"/>
-                <Tab label="Söndag"/>
+                <Tab label="lördag" style={style}/>
+                <Tab label="Söndag" style={style}/>
             </Tabs>
             {value == 0 ?
                 <div className="sat">

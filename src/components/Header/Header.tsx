@@ -60,12 +60,12 @@ const Header: FC<PageIdInterface> = ({pageId, setPageId}) => {
                 </div>
                 <div className={pageId == 3 ? "selected" : "unselected"}>
                     <Link to="/ovrig-info">
-                        <Button onClick={() => onClick(3)} variant="text" style={buttonStyle}>Övrig info</Button>
+                        <Button onClick={() => onClick(3)} variant="text" style={buttonStyle}>Info</Button>
                     </Link>
                 </div>
                 <div className={pageId == 4 ? "selected" : "unselected"}>
                     <Link to="/filipstad">
-                        <Button onClick={() => onClick(4)} variant="text" style={buttonStyle}>Filipstad</Button>
+                        <Button onClick={() => onClick(4)} variant="text" style={buttonStyle}>Om Filipstad</Button>
                     </Link>
                 </div>
             </div>

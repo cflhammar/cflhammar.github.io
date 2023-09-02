@@ -33,7 +33,7 @@ const Program = () => {
     }
 
     return (
-        <Box sx={{width: "100%"}}>
+        <Box sx={{width: "100%", paddingTop: "10px"}}>
             <Tabs value={value} onChange={handleChange} centered>
                 <Tab label="lördag" style={style}/>
                 <Tab label="Söndag" style={style}/>

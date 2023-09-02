@@ -9,6 +9,7 @@ import Info from "./components/Info";
 import Filipstad from "./components/Filipstad";
 import {Button} from "@material-ui/core";
 import background from "./bg.jpg";
+import SofImage from "./components/SofImage/SofImage";
 
 
 function App() {

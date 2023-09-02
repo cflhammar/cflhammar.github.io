@@ -3,7 +3,7 @@ import React from "react";
 const Filipstad = () => {
   return (
     <div className="start">
-        <p> FREDRIK, SOFIA OCH VÄRMLAND </p>
+        <h1> FREDRIK, SOFIA OCH VÄRMLAND </h1>
 
         <p> Att besluta att vi ville gifta oss – det var enkelt! Men att besluta VAR NÅGONSTANS var inte helt givet. Vi landade i
         Hennickehammars herrgård I Filipstad. Filipstad tänker du – varför det av alla ställen? Framförallt för att vi blev
@@ -18,7 +18,7 @@ const Filipstad = () => {
         inte samtidigt pga 3 årig årderskillnad) och stångats med både Torsten, X, Y för att få våra gymnasiebetyg. Vi har X och vi
             har Y. </p>
 
-        <p> FUN FACTS OM FILIPSTAD </p>
+        <h1> FUN FACTS OM FILIPSTAD </h1>
 
         <p> Visste du att… </p>
 

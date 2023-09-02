@@ -7,38 +7,17 @@ import sof2 from "./sof2.jpeg";
 import sof3 from "./sof3.jpeg";
 import sof4 from "./sof4.jpeg";
 import sof5 from "./sof5.jpeg";
+import SofImage from "../SofImage/SofImage";
 
 interface PageId {
     setPageId: (pageId: number) => void
 }
 
 const StartPage: FC<PageId> = ({setPageId}) => {
-const [imageNumber, setImageNumber] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            let next = (imageNumber + 1 ) % images.length;
-            setImageNumber(next);
-        }, 1000)
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, [imageNumber]);
-
-
-    const images = [sof1, sof2, sof3, sof4, sof5];
-    const getNextImage = () : string => {
-      //  let r = Math.floor(Math.random() * images.length - 1) + 1 ;
-        console.log(imageNumber);
-        return images[imageNumber];
-    }
-
 
     return (
         <Container>
             <Box>
-                <img src={getNextImage()} style={{width: "40%", height: "100%" }}/>
                 <h1> Vi ska gifta oss! </h1>
                 <h2>Varmt välkommen på vårt bröllop!</h2>
 
@@ -63,7 +42,7 @@ const [imageNumber, setImageNumber] = useState(0);
                 <p> PUSS OCH KRAM </p>
                 <p> Sofia & Fredrik </p>
 
-                Just det! Kom ihåg att OSA senast 1 December <Link to={"/boende"} onClick={() => setPageId(2)}> här </Link>.
+                Just det! Kom ihåg att OSA senast 1 Januari <Link to={"/boende"} onClick={() => setPageId(2)}> här </Link>.
             </Box>
         </Container>
     );

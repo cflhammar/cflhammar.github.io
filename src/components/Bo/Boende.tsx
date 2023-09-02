@@ -7,7 +7,6 @@ const StartPage = () => {
         <Container>
             <Box>
                 <div className="start">
-                    <img src={hh} alt="hennickehammars herrgård" style={{width:"75%"}}/>
                     <h1>Hennickehammars Herrgård</h1>
                     <p> Bröllopet äger rum på Hennicke Hammars Herrgård utanför Filipstad.</p>
 
@@ -38,6 +37,8 @@ const StartPage = () => {
                     receptionen.
 
                     <p> Utcheckning är kl. XX söndag 2 juni.</p>
+                    <img src={hh} alt="hennickehammars herrgård" style={{width:"75%", paddingTop: "10px"}}/>
+
                 </div>
             </Box>
         </Container>

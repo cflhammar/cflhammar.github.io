@@ -12,11 +12,11 @@ import background from "./bg.jpg";
 import SofImage from "./components/SofImage/SofImage";
 import CountDown from "./components/CountDown";
 
-
+//TODO: fix icon, login cache, bigger image (30%)
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
-    const [isVerified, setIsVerified] = useState(false);
+    const [isVerified, setIsVerified] = useState(true);
 
     const handleChange = (event: { target: { value: React.SetStateAction<string> | null; }; }) => {
         if (event.target.value != null)  setPassword(event.target.value);

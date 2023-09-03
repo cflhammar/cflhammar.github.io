@@ -8,6 +8,7 @@ import WbTwilightIcon from '@mui/icons-material/WbTwilight';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import {Box, Container, Tab, Tabs, Typography} from "@mui/material";
+import {Checkroom} from "@mui/icons-material";
 
 const Program = () => {
     const [value, setValue] = React.useState(0);
@@ -40,6 +41,11 @@ const Program = () => {
             </Tabs>
             {value == 0 ?
                 <div className="sat">
+                    <div className="activity">
+                        <Checkroom/>
+                        <p style={style}>Checka in</p>
+                        <p style={timestyle}> Från 13:30</p>
+                    </div>
                     <div className="activity">
                         <FavoriteIcon/>
                         <p style={style}>Vigsel</p>
@@ -81,106 +87,6 @@ const Program = () => {
                 </div>}
         </Box>
     );
-
 };
-
-
-//
-//
-// return (
-//     <Box sx={{width: '100%'}}>
-//         <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
-//             <Tabs value={value} onChange={handleChange} centered>
-//                 <Tab label="Lördag"/>
-//                 <Tab label="Söndag"/>
-//             </Tabs>
-//         </Box>
-//         <CustomTabPanel value={value} index={0}>
-//             <div className="activity">
-//                 <FavoriteIcon/>
-//                 <p id="testid">Vigsel</p>
-//                 <p id="testid">15:00</p>
-//             </div>
-//             <div className="activity">
-//                 <WineBarIcon/>
-//                 <p>Mingel & Foto</p>
-//                 <p>15:30</p>
-//             </div>
-//             <div className="activity">
-//                 <RestaurantIcon/>
-//                 <p>Middag</p>
-//                 <p>17:30</p>
-//             </div>
-//             <div className="activity">
-//                 <CelebrationIcon/>
-//                 <p>Fest</p>
-//                 <p>22:30</p>
-//             </div>
-//             <div className="activity">
-//                 <WbTwilightIcon/>
-//                 <p>Efterfest i sjöstugan</p>
-//                 <p>02:00</p>
-//             </div>
-//         </CustomTabPanel>
-//         <CustomTabPanel value={value} index={1}>
-//             <div className="activity">
-//                 <FreeBreakfastIcon/>
-//                 <p>Frukost</p>
-//                 <p>08.00-11.00</p>
-//             </div>
-//             <div className="activity">
-//                 <BusinessCenterIcon/>
-//                 <p>Utcheckning och hemfärd</p>
-//                 <p>11.00</p>
-//             </div>
-//         </CustomTabPanel>
-//     </Box>
-// );
-// return (
-//     <Container>
-//         <div className="program">
-//         <div className="sat">
-//             <div className="activity">
-//                 <FavoriteIcon/>
-//                 <p>Vigsel</p>
-//                 <p>15:00</p>
-//             </div>
-//             <div className="activity">
-//                 <WineBarIcon/>
-//                 <p>Mingel & Foto</p>
-//                 <p>15:30</p>
-//             </div>
-//             <div className="activity">
-//                 <RestaurantIcon/>
-//                 <p>Middag</p>
-//                 <p>17:30</p>
-//             </div>
-//             <div className="activity">
-//                 <CelebrationIcon/>
-//                 <p>Fest</p>
-//                 <p>22:30</p>
-//             </div>
-//             <div className="activity">
-//                 <WbTwilightIcon/>
-//                 <p>Efterfest i sjöstugan</p>
-//                 <p>02:00</p>
-//             </div>
-//         </div>
-//         <div className="sun">
-//             <div className="activity">
-//                 <FreeBreakfastIcon/>
-//                 <p>Frukost</p>
-//                 <p>08.00-11.00</p>
-//             </div>
-//             <div className="activity">
-//                 <BusinessCenterIcon/>
-//                 <p>Utcheckning och hemfärd</p>
-//                 <p>11.00</p>
-//             </div>
-//         </div>
-//         </div>
-//     </Container>
-// );
-// };
 
 export default Program;

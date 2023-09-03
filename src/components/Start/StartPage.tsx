@@ -1,13 +1,6 @@
 import React, {FC, useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {Box, Container} from "@mui/material";
-
-import sof1 from "./sof1.jpeg";
-import sof2 from "./sof2.jpeg";
-import sof3 from "./sof3.jpeg";
-import sof4 from "./sof4.jpeg";
-import sof5 from "./sof5.jpeg";
-import SofImage from "../SofImage/SofImage";
 import CountDown from "../CountDown";
 
 interface PageId {
@@ -23,28 +16,44 @@ const StartPage: FC<PageId> = ({setPageId}) => {
                 <CountDown />
                 <h1>Varmt välkommen på vårt bröllop!</h1>
 
-                <p> Vi är otroligt glada att dela med oss av den största dag i våra liv! Med glädje och
-                    förväntan bjuder vi in dig för att fira vår kärlek när vi gifter oss på
-                    Hennickehammars Herrgård I Filipstad lördag den 1 juni 2024 kl. 15.00. </p>
-
-                <p> Efter vigseln fortsätter vi med middag och fest (också på Hennickehammars
-                    herrgård). </p>
-
-                <p> Vi hoppas även att så många som möjligt vill och har möjlighet att sova över på
-                    Hennickehammars herrgård tillsammans med oss och avsluta med gemensam
-                    frukost på söndag. Läs mer om detta under fliken “boende”. </p>
+                <p>
+                    Vi hoppas att vi ses på Hennickehammars Herrgård i Filipstad
+                    <span className="bold-text"> lördag den 1 juni 2024. </span>
+                </p>
 
                 <p>
-                    Vi hoppas att du på dessa sidor ska hitta all matnyttig information du kan behöva
-                    inför bröllopet, men om frågor kvarstår är du såklart alltid välkommen att höra av
-                    dig till oss! </p>
+                    Dagen påbörjas med vigsel kl. 15.00 och följs av middag och fest! Vi hoppas
+                    därefter att så många som möjligt vill och har möjlighet att sova över på
+                    Hennickehammars herrgård tillsammans med oss och avsluta med gemensam
+                    frukost på söndag.
+                </p>
 
-                <p> Ser fram emot att ses den 1 juni! </p>
+                <p> Läs mer om hur du bokar boende under fliken
+                    <Link to={"/boende"} onClick={() => setPageId(2)} style={{textDecoration: "none"}}> <span className="bold-text">“OSA & boende”</span>.</Link></p>
 
-                <p> PUSS OCH KRAM </p>
-                <p> Sofia & Fredrik </p>
+                <p>
+                    Vi hoppas att du på denna hemsida ska hitta all information du kan behöva inför
+                    bröllopet, men om frågor kvarstår är du såklart alltid välkommen att höra av dig till
+                    oss!
+                </p>
 
-                Just det! Kom ihåg att OSA senast 1 Januari <Link to={"/boende"} onClick={() => setPageId(2)}> här </Link>.
+               <p>
+                   Vi längtar tills den 1 juni!
+               </p>
+
+               <p>
+                   Just det! Kom ihåg att OSA senast 1 januari!
+               </p>
+                <br/>
+
+               <p>
+                   <span className="bold-text">PUSS OCH KRAM</span>
+               </p>
+
+                <p>
+                    Sofia & Fredrik
+                </p>
+
             </Box>
         </Container>
     );

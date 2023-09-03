@@ -8,7 +8,7 @@
 }
 
 .text-container {
-  width: 75%;
+  width: 95%;
   height: auto;
   margin: auto;
   margin-bottom: 30px;
@@ -17,6 +17,17 @@
   /*border-style: solid;*/
   /*border-width: 2px;*/
 
+  /*text-align: left;*/
+}
+
+@media (min-width: 600px) {
+  .text-container {
+    width: 50%;
+  }
+}
+
+.text-container p {
+  text-align: left;
 }
 
 h1, h2, h3 {
@@ -36,4 +47,8 @@ h1, h2, h3 {
 
 .helper {
   margin-bottom: 1px;
+}
+
+.bold-text {
+  font-weight: 1000;
 }

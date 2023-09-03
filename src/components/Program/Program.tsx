@@ -22,7 +22,8 @@ const Program = () => {
         padding: "3px",
         fontWeight: "bold",
         fontFamily: "Amatic SC",
-        fontSize: "x-large"
+        fontSize: "x-large",
+        textAlign: "center"
     }
 
     const timestyle = {
@@ -30,7 +31,9 @@ const Program = () => {
         padding: "3px",
         fontWeight: "bold",
         fontFamily: "Amatic SC",
-        fontSize: "x-large"
+        fontSize: "x-large",
+        textAlign: "center"
+
     }
 
     return (

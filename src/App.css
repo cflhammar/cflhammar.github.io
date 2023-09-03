@@ -22,9 +22,17 @@
 
 @media (min-width: 800px) {
   .text-container {
-    width: 70%;
+    width: 50%;
   }
 }
+
+@media (min-width: 1200px) {
+  .text-container {
+    width: 40%;
+  }
+}
+
+
 
 .text-container p {
   text-align: left;

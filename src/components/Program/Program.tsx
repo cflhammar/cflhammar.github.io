@@ -23,17 +23,14 @@ const Program = () => {
         fontWeight: "bold",
         fontFamily: "Amatic SC",
         fontSize: "x-large",
-        textAlign: "center"
     }
 
     const timestyle = {
         margin: 0,
         padding: "3px",
-        fontWeight: "bold",
+        // fontWeight: "bold",
         fontFamily: "Amatic SC",
-        fontSize: "x-large",
-        textAlign: "center"
-
+        fontSize: "x-large"
     }
 
     return (
@@ -45,47 +42,47 @@ const Program = () => {
             {value == 0 ?
                 <div className="sat">
                     <div className="activity">
-                        <Checkroom/>
-                        <p style={style}>Checka in</p>
-                        <p style={timestyle}> Från 13:30</p>
+                        <Checkroom/> <br/>
+                        <span style={style}>Checka in</span>
+                        <span style={timestyle}> Från 13:30</span>
                     </div>
                     <div className="activity">
-                        <FavoriteIcon/>
-                        <p style={style}>Vigsel</p>
-                        <p style={timestyle}>15:00</p>
+                        <FavoriteIcon/> <br/>
+                        <span style={style}>Vigsel</span>
+                        <span style={timestyle}>15:00</span>
                     </div>
                     <div className="activity">
-                        <WineBarIcon/>
-                        <p style={style}>Mingel & Foto</p>
-                        <p style={timestyle}>15:30</p>
+                        <WineBarIcon/> <br/>
+                        <span style={style}>Mingel & Foto</span>
+                        <span style={timestyle}>15:30</span>
                     </div>
                     <div className="activity">
-                        <RestaurantIcon/>
-                        <p style={style}>Middag</p>
-                        <p style={timestyle}>17:30</p>
+                        <RestaurantIcon/> <br/>
+                        <span style={style}>Middag</span>
+                        <span style={timestyle}>17:30</span>
                     </div>
                     <div className="activity">
-                        <CelebrationIcon/>
-                        <p style={style}>Fest</p>
-                        <p style={timestyle}>22:30</p>
+                        <CelebrationIcon/> <br/>
+                        <span style={style}>Fest</span>
+                        <span style={timestyle}>22:30</span>
                     </div>
                     <div className="activity">
-                        <WbTwilightIcon/>
-                        <p style={style}>Efterfest i sjöstugan</p>
-                        <p style={timestyle}>02:00</p>
+                        <WbTwilightIcon/> <br/>
+                        <span style={style}>Efterfest i sjöstugan</span>
+                        <span style={timestyle}>02:00</span>
                     </div>
                 </div>
                 :
                 <div className="sun">
                     <div className="activity">
-                        <FreeBreakfastIcon/>
-                        <p style={style}>Frukost</p>
-                        <p style={timestyle}>08.00-11.00</p>
+                        <FreeBreakfastIcon/> <br/>
+                        <span style={style}>Frukost</span>
+                        <span style={timestyle}>08.00-11.00</span>
                     </div>
                     <div className="activity">
-                        <BusinessCenterIcon/>
-                        <p style={style}>Utcheckning och hemfärd</p>
-                        <p style={timestyle}>11.00</p>
+                        <BusinessCenterIcon/> <br/>
+                        <span style={style}>Utcheckning och hemfärd</span>
+                        <span style={timestyle}>11.00</span>
                     </div>
                 </div>}
         </Box>

@@ -5,8 +5,6 @@
 p .activity{
     margin: 0;
     font-family: "Amatic SC";
+    text-align: left;
 }
 
-p .sat {
-    text-align: center;
-}

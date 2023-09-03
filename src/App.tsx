@@ -8,11 +8,8 @@ import Boende from "./components/Bo/Boende";
 import Info from "./components/Info";
 import Filipstad from "./components/Filipstad";
 import {Button} from "@material-ui/core";
-import background from "./bg.jpg";
-import SofImage from "./components/SofImage/SofImage";
-import CountDown from "./components/CountDown";
 
-//TODO: fix icon, login cache, bigger image (30%)
+//TODO: fix icon, login cache,
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
@@ -39,8 +36,12 @@ function App() {
                             <Route path="/ovrig-info" element={<Info/>}/>
                             <Route path="/filipstad" element={<Filipstad/>}/>
                         </Routes>
+                        <div style={{textAlign:"right", opacity:"30%", paddingTop:"100px"}}>
+                            © by Hammar
+                        </div>
                     </div>
                 </Router>
+
             </div>
         )}
     else {

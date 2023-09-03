@@ -21,13 +21,13 @@ const Info = () => {
 
             <h2> KLÄDSEL </h2>
 
-            <p> Klädkoden är <span className="bold-text"> mörk kostym</span>. <br/>
-                Vad innebär det då? <br/>
-                Vi tolkar det enligt X som Y, men egentligen är vi relativt öppna för
-                annan tolkning också. Det viktiga är att du känner dig fin!
+            <p>
+                Klädkoden är <span className="bold-text"> mörk kostym</span> men det viktigaste är att du känner dig fin!
             </p>
-
-            <p>fixa klädkod info</p>
+            <p>
+                Vigseln är planerad att hållas utomhus (håll tummarna att vädergudarna är med oss) och på gräs
+                (vårt tips är att låta stilettklackarna stanna hemma).
+            </p>
 
             <h2> PRESENTER </h2>
 
@@ -39,8 +39,8 @@ const Info = () => {
             <h2> BARN </h2>
 
             <p>
-                Barn är underbara, men denna dag och kväll skulle vi bli tacksamma om ni ordnar med barnpassning. <br/>
-                Ammande barn är givetvis välkomna!
+                Barn är underbara, men denna dag är vi tacksamma om ni ordnar med barnpassning.
+                Ammande barn är givetvis välkomna.
             </p>
 
         </div>

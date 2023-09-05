@@ -31,7 +31,7 @@ const StartPage = () => {
                     <div >
                         <a target='_blank'
                            rel='noopener noreferrer' href="https://www.google.se">
-                            <Button variant="outlined" startIcon={<KeyboardDoubleArrowRight />} endIcon={<KeyboardDoubleArrowLeft />} >
+                            <Button variant="outlined" startIcon={<KeyboardDoubleArrowRight />} endIcon={<KeyboardDoubleArrowLeft />}  >
                                 OSA och boka boende här
                             </Button>
                         </a>
@@ -48,7 +48,7 @@ const StartPage = () => {
                     </p>
 
                     <p>
-                        Rummen finns tillgängliga från kl. 13.30 lördag 1 juni. Nycklar till rummen hämtas upp
+                        Rummen finns tillgängliga från kl. 13.30 lördag 1 juni. Nyckel hämtas upp
                         i receptionen.
                     </p>
                     <p>

@@ -1,6 +1,7 @@
 import React, {FC, useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {Box, Container} from "@mui/material";
+import FavoriteIcon from '@mui/icons-material/Favorite';
 import CountDown from "../CountDown";
 
 interface PageId {
@@ -22,7 +23,7 @@ const StartPage: FC<PageId> = ({setPageId}) => {
                 </p>
 
                 <p>
-                    Dagen påbörjas med vigsel kl. 15.00 och följs av middag och fest! Vi hoppas
+                    Dagen börjar med vigsel kl. 15.00 och följs av middag och fest! Vi hoppas
                     därefter att så många som möjligt vill och har möjlighet att sova över på
                     Hennickehammars herrgård tillsammans med oss och avsluta med gemensam
                     frukost på söndag.
@@ -30,26 +31,23 @@ const StartPage: FC<PageId> = ({setPageId}) => {
 
                 <p> Läs mer om hur du bokar boende under fliken
                     <Link to={"/boende"} onClick={() => setPageId(2)} style={{textDecoration: "none"}}> <span className="bold-text">“OSA & boende”</span>.</Link></p>
-
+<br/>
                 <p>
-                    Vi hoppas att du på denna hemsida ska hitta all information du kan behöva inför
-                    bröllopet, men om frågor kvarstår är du såklart alltid välkommen att höra av dig till
-                    oss!
+                    Vi hoppas att du hittar all information du behöver inför
+                    bröllopet här, men om frågor kvarstår är du alltid välkommen att höra av dig!
                 </p>
 
                <p>
-                   Vi längtar tills den 1 juni!
+                   Vi ser fram emot att fira tillsammans den 1 juni!
                </p>
 
-               <p>
-                   Just det! Kom ihåg att OSA senast 1 januari!
-               </p>
                 <br/>
 
                <p>
                    <span className="bold-text">PUSS OCH KRAM</span>
                </p>
 
+               <p> <FavoriteIcon /> </p>
                 <p>
                     Sofia & Fredrik
                 </p>

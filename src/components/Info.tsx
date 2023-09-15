@@ -13,9 +13,9 @@ const Info = () => {
 
             <p>
                 Om du (ensam eller tillsammans med några andra) önskar hålla tal eller bjuda på annan underhållning
-                under middagen kontaktas Sara eller Frida senast 1 maj 2024 på:
+                under middagen, kontakta Sara eller Frida senast 1 maj 2024 på:
                 <br/>
-                mailto
+                <span className="bold-text" onClick={(e) => {window.location.href ='mailto:sofiaochfredrik2024@gmail.com';}}>sofiaochfredrik2024@gmail.com </span>
             </p>
 
 
@@ -25,15 +25,18 @@ const Info = () => {
                 Klädkoden är <span className="bold-text"> mörk kostym</span> men det viktigaste är att du känner dig fin!
             </p>
             <p>
-                Vigseln är planerad att hållas utomhus (håll tummarna att vädergudarna är med oss) och på gräs
-                (vårt tips är att låta stilettklackarna stanna hemma).
+                Vigseln är planerad att hållas utomhus och på gräs. Håll tummarna att vädergudarna är med oss och ett tips
+                är att lämna stilettklackarna i garderoben.
             </p>
 
             <h2> PRESENTER </h2>
 
             <p>
-                Den viktigaste och finaste presenten för oss är att du är med och firar oss på vår dag!  <br/>
-                Om du vill ge någonting utöver det önskar vi bidrag till vår bröllopsresa via att swisha till XXXX.
+                Den viktigaste och finaste presenten du kan ge oss är att du är med och firar vår dag!
+              </p>
+            <p>
+                Om du ändå vill uppmärksamma vår dag med en gåva uppskattar vi ett bidrag till vår bröllopsresa via våra toastmadames.
+
             </p>
 
             <h2> BARN </h2>

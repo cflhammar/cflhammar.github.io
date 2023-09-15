@@ -13,7 +13,7 @@ import {Button} from "@material-ui/core";
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
-    const [isVerified, setIsVerified] = useState(false);
+    const [isVerified, setIsVerified] = useState(true);
 
     const handleChange = (event: { target: { value: React.SetStateAction<string> | null; }; }) => {
         if (event.target.value != null)  setPassword(event.target.value);
@@ -34,7 +34,7 @@ function App() {
                             <Route path="/program" element={<Program/>}/>
                             <Route path="/boende" element={<Boende/>}/>
                             <Route path="/ovrig-info" element={<Info/>}/>
-                            <Route path="/filipstad" element={<Filipstad/>}/>
+                            <Route path="/varmland" element={<Filipstad/>}/>
                         </Routes>
                         <div style={{textAlign:"right", opacity:"30%", paddingTop:"100px"}}>
                             © by Hammar

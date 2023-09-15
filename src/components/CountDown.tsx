@@ -30,7 +30,7 @@ const CountDown = () => {
         const seconds = exp.subtract(minutes, 'minutes').diff(now, 'seconds');
 
         setDays(days);
-        setHours(hours);
+        setHours(hours-2);
         setMinutes(minutes);
         setSeconds(seconds);
     }

@@ -5,63 +5,63 @@ const Filipstad = () => {
         <div className="start">
             <h2> FREDRIK, SOFIA OCH VÄRMLAND </h2>
             <p>
-                Fredrik är born and raised på Hammarö, älskar att vara ute i nature xxxxx
-            </p>
-            <p>
-                Sofia är born Trollhättan men sedan raised Karlstad, då familjen flyttade till Kil och sedan Karlstad
-                under högstadiet.
-            </p>
-            <p>
-                Detta visste vi dock inte om då vi träffades i Stockholm på en nyårsfest 2018 (tack till Erika och
-                Christoffer som bjöd in
-                oss!). Vi insåg då att vi båda gått på samma gymnasieskola (dock inte samtidigt pga 3 årig
-                årderskillnad) och stångats med
-                både Torsten, Ellisabeth och Gunnar för att få våra gymnasiebetyg från Älvkullegymnasiet. Vi hade säkert
-                varit på Löfbergs
-                Lila Arena och hejat fram Färjestad till flera SM-guld (bade 06, 09 och 11!). Värt att nämna är ju att
-                vi nu fick vi chans att
-                fira ett guld tillsammans 2021!
-            </p>
-            <p>
-                Något mer om Karlstad? Hemmafest på Hammarö?
-            </p>
-            <p>
-                Därför kändes det kul att återförenas i Värmland för vårt bröllop! Hennickehammar är dessutom en
-                underbar plats –bara vänta och se själv.
-            </p>
-
-            <h2> FUN FACTS OM FILIPSTAD </h2>
-
-
-            <p> Visste du att… </p>
-
-            <p>
-                De två framgångsrika bröderna <span className="bold-text">  John och Nils Ericsson </span> föddes i Långbanshyttan (nära Filipstad) år 1803
-                respective 1806.
-                Nils Ericson var ingenjör och banbrytande person inom järnvägsutveckling samt våra kanaler. Han spelade
-                en central roll i
-                planering och byggande av Sveriges första stambanor och bidrog starkt till utvecklingen av landets
-                järnvägssystem under
-                1800-talet. John är känd som en svensk sjöofficer och ingenjör. Han var en pionjär inom marin teknik och
-                mest
-                känd är han som en av uppfinnarna till den första funktionsdugliga propellern och som konstruktör till
-                pansarbåten USS Monitor, ett amerikanskt krigsfartyg, som hjälpte Nordstaterna att vinna det amerikanska
-                inbördeskriget på 1860-talet.
+                Som de flesta nog vet har Fredrik växt upp på Hammarö utanför Karlstad.
+                Det som färre kanske känner till är att Sofia bott både Kil och Karlstad under sin högstadie- och
+                gymnasietid.
             </p>
 
             <p>
-                <span className="bold-text"> Nils Ferlin </span> var en svensk poet och författare, känd för sina gripande och humoristiska dikter som föddes
-                1898 i
-                Filipstad och anses vara en av Sveriges mest älskade och inflytelserika poeter under 1900-talet. Ferlins
-                verk
-                behandlade ofta vardagslivet, kärlek och samhällets skiftningar på ett känslosamt och lättillgängligt
-                sätt.
-                <br/>
-                Vår favorit (och säkert många andras) är “I Folkviseton”
+                Att vi gått på samma gymnasium var något vi inte visste när vi träffades för första gången i Stockholm
+                på en nyårsfest 2018 (tack till Erika och Christoffer som bjöd in oss!).
+                Tänk att vi har stångats med samma lärare på Älvkullegymnasiet och
+                hejat fram färjestad på Löfbergs Arena till flera SM-guld under skoltiden (bade 06, 09 och 11!).
+            </p>
+            <p>
+                Därför kändes det extra kul att återvända till Värmland för vårat bröllop!
+                Hennickehammar är dessutom en underbar plats som vi gärna vill visa er.
+            </p>
+
+            <h2>FILIPSTAD </h2>
+
+            <h3> Bröderna Ericsson </h3>
+
+            <p>
+                De två framgångsrika bröderna <span className="bold-text">  John och Nils Ericsson </span>
+                föddes i Långbanshyttan utanför Filipstad i början på 1800-talet.
+                Bröderna var lärlingar under Baltazar von Platen vid byggandet av Göta kanal och blev båda tongivande
+                ingenjörer under det svenska 1800-talet.
+            </p>
+            <p>
+                Nils Ericsson var med och byggde flera viktiga kanaler, akvedukter, hamnar och slussar (Ja, även den
+                som
+                vi känner som Slussen i Stockholm).
+                Han ledde även arbetet med att utbyggnaden sveriges järnvägssytem. Precis, där är därför det heter
+                Nils
+                Ericsson-terminalen.
+            </p>
+            <p>
+                John är känd som en svensk sjöofficer och ingenjör. Han var en pionjär inom marin teknik och
+                mest känd är han som en av uppfinnarna till den första funktionsdugliga propellern och som
+                konstruktör till pansarbåten USS Monitor, ett amerikanskt krigsfartyg, som hjälpte Nordstaterna att
+                vinna det
+                amerikanska inbördeskriget på 1860-talet.
+            </p>
+
+            <h3> nils Ferlin </h3>
+
+            <p>
+                <span className="bold-text"> Nils Ferlin </span> var en svensk poet och författare föddes
+                1898 i Filipstad och anses vara en av Sveriges mest inflytelserika poeter under 1900-talet.
+                Ferlins verk behandlade ofta vardagslivet, kärlek och samhällets skiftningar på ett känslosamt och
+                lättillgängligt sätt.
+            </p>
+            <p>
+                Vår favorit (och säkert många andras) är dikten <span className="bold-text"> Folkviseton</span>:
             </p>
 
 
             <p>
+                <span style={{fontStyle: "italic"}}>
                 Månen är stor, <br/>
                 Kärleken kommer och kärleken går, <br/>
                 ingen kan tyda dess lagar. <br/>
@@ -84,9 +84,10 @@ const Filipstad = () => {
                 Min lycka är din,<br/>
                 din lycka är min<br/>
                 och gråten är min när du gråter.<br/>
+                               </span>
                 <br/>
-                I Folkviseton, Nils<br/>
-                Ferlin, 1957
+                Nils Ferlin, 1957
+
             </p>
         </div>
     );

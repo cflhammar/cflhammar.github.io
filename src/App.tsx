@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Cookies from "universal-cookie";
 import Header from "./components/Header/Header";
 import StartPage from "./components/Start/StartPage";
 import Program from "./components/Program/Program";
@@ -9,18 +10,31 @@ import Info from "./components/Info";
 import Filipstad from "./components/Filipstad";
 import {Button} from "@material-ui/core";
 
-//TODO: fix icon, login cache,
+
+let cookies = new Cookies();
+
 function App() {
     const [pageId, setPageId] = useState(0);
     const [password, setPassword] = useState("");
-    const [isVerified, setIsVerified] = useState(true);
+    const [isVerified, setIsVerified] = useState(false);
 
     const handleChange = (event: { target: { value: React.SetStateAction<string> | null; }; }) => {
         if (event.target.value != null)  setPassword(event.target.value);
     };
 
+    useEffect(() => {
+        const token = cookies.get("SofiaOchFredrikPassword");
+        if (token == "SF2024") {
+            console.log("cookie")
+            setIsVerified(true)
+        }
+    }, []);
+
     const validate = () => {
-        if (password === "SF2024") setIsVerified(true)
+        if (password === "SF2024") {
+            cookies.set("SofiaOchFredrikPassword", password);
+            setIsVerified(true)
+        }
     }
 
     if (isVerified) {

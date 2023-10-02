@@ -22,15 +22,15 @@ const CountDown = () => {
     },)
 
     const updateTime = () => {
-        const now = new Date();
-        const exp = moment(expiration);
+        const now = moment().utc(true)
+        const exp = moment(expiration).utcOffset('+0100');
         const days = exp.diff(now, 'days');
         const hours = exp.subtract(days, 'days').diff(now, 'hours');
         const minutes = exp.subtract(hours, 'hours').diff(now, 'minutes');
         const seconds = exp.subtract(minutes, 'minutes').diff(now, 'seconds');
 
         setDays(days);
-        setHours(hours-2);
+        setHours(hours);
         setMinutes(minutes);
         setSeconds(seconds);
     }

@@ -13,7 +13,7 @@ const StartPage = () => {
                 <div className="start">
                     <h2>Hennickehammars herrgård</h2>
                     <p>
-                        Bröllopet (visgel, middag, fest, övernattning och frukost) äger rum på Hennickehammars Herrgård utanför Filipstad.
+                        Bröllopet (vigsel, middag, fest, övernattning och frukost) äger rum på Hennickehammars Herrgård utanför Filipstad.
                     </p>
 
                     <p>

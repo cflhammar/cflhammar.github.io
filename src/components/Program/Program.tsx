@@ -77,7 +77,7 @@ const Program = () => {
                     <div className="activity">
                         <FreeBreakfastIcon/> <br/>
                         <span style={style}>Frukost</span>
-                        <span style={timestyle}>08.00-11.00</span>
+                        <span style={timestyle}>08.00-10.00</span>
                     </div>
                     <div className="activity">
                         <BusinessCenterIcon/> <br/>
